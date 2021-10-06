@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using GarageManager.GraphQL.Application.Contracts;
+using GarageManager.GraphQL.DataModel.Contracts;
 
 namespace GarageManager.GraphQL.DataModel.Repositories
 {

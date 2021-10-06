@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using GarageManager.GraphQL.DataModel.Contracts;
+using GarageManager.GraphQL.DataModel.Repositories;
 
 namespace GarageManager.GraphQL.DataModel
 {
@@ -23,8 +25,8 @@ namespace GarageManager.GraphQL.DataModel
             }
 
             #region Repositories
-            /**services.AddTransient(typeof(IGenericRepositoryAsync<>), typeof(GenericRepositoryAsync<>));
-            services.AddTransient<IVehicleRepositoryAsync, VehicleRepositoryAsync>();
+            services.AddTransient(typeof(IGenericRepositoryAsync<>), typeof(GenericRepositoryAsync<>));
+            /**services.AddTransient<IVehicleRepositoryAsync, VehicleRepositoryAsync>();
             services.AddTransient<ICustomerRepositoryAsync, CustomerRepositoryAsync>();
             services.AddTransient<IVehicleAdmisionRepositoryAsync, VehicleAdmisionRepositoryAsync>();
             services.AddTransient<IUserRepositoryAsync, UserRepositoryAsync>();
