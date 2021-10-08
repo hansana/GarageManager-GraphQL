@@ -26,8 +26,8 @@ namespace GarageManager.GraphQL.DataModel
 
             #region Repositories
             services.AddTransient(typeof(IGenericRepositoryAsync<>), typeof(GenericRepositoryAsync<>));
-            /**services.AddTransient<IVehicleRepositoryAsync, VehicleRepositoryAsync>();
             services.AddTransient<ICustomerRepositoryAsync, CustomerRepositoryAsync>();
+            /**services.AddTransient<IVehicleRepositoryAsync, VehicleRepositoryAsync>();
             services.AddTransient<IVehicleAdmisionRepositoryAsync, VehicleAdmisionRepositoryAsync>();
             services.AddTransient<IUserRepositoryAsync, UserRepositoryAsync>();
             services.AddTransient<ICustomerVehicleRepositoryAsync, CustomerVehicleRepositoryAsync>();*/

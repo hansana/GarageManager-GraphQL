@@ -1,5 +1,8 @@
 using GarageManager.GraphQL.Application;
+using GarageManager.GraphQL.Application.GraphQL;
 using GarageManager.GraphQL.DataModel;
+using GraphQL.Server;
+using GraphQL.Server.Ui.Playground;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -37,8 +40,10 @@ namespace GarageManager.GraphQL.API
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseGraphQL<CustomerSchema>();
+            app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
 
-            app.UseRouting();
+            /**app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
@@ -46,7 +51,7 @@ namespace GarageManager.GraphQL.API
                 {
                     await context.Response.WriteAsync("Hello World!");
                 });
-            });
+            });*/
         }
     }
 }
