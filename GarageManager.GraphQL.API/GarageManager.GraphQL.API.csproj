@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GarageManager.GraphQL.Application\GarageManager.GraphQL.Application.csproj" />
     <ProjectReference Include="..\GarageManager.GraphQL.DataModel\GarageManager.GraphQL.DataModel.csproj" />
   </ItemGroup>
 
